@@ -10,6 +10,6 @@ Pre-requisites
     Android Build Tools v25.0.2
     Android Support Repository v25.3.1
 
-App Preview
+App Showcase
 
-![app screenshot](https://github.com/yemoAde/Finder/imgs/showcase.gif)
+![app showcase](https://github.com/yemoAde/Finder/tree/master/imgs/showcase.gif)
