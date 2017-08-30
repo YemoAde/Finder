@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/adeyemogabriel/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Users/adeyemogabriel/AndroidStudioProjects/Finder/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.1.0_247b71a75798e526c8c95c26bfc97af7496e62a9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/adeyemogabriel/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/adeyemogabriel/AndroidStudioProjects/Finder/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_79ef99c14b621ccc28d8755ba5a65388cd4da513/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/adeyemogabriel/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/Users/adeyemogabriel/AndroidStudioProjects/Finder/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_8f03e0e2f35a6d22615986e30cf314028fe3cf9e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/adeyemogabriel/AndroidStudioProjects/Finder/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ab00e02ae444e4b0b3d1a9445e4f913b45904769">
+        <dex dex="/Users/adeyemogabriel/AndroidStudioProjects/Finder/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_d241053e127c13b6034b7255125bd34c48684dea/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/adeyemogabriel/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/Users/adeyemogabriel/AndroidStudioProjects/Finder/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.1.0_af0bc13ea8f206e1708a7f418ccf49aec0ad8a36/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/adeyemogabriel/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="/Users/adeyemogabriel/AndroidStudioProjects/Finder/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.0_7ec8cb8366fbe40a9de8e4f8820ddb245ee78c99/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/adeyemogabriel/AndroidStudioProjects/Finder/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/adeyemogabriel/AndroidStudioProjects/Finder/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_84f2f9cc1727e5c9e875272ece8ca868920c103c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/adeyemogabriel/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="/Users/adeyemogabriel/AndroidStudioProjects/Finder/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_968cb129ef7325161cfcb3a67e5a00c6e96f7341/classes.dex" />
+    </item>
+
+</items>
