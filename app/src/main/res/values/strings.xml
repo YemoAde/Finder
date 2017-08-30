@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">Finder</string>
-    <string name="title_activity_detail">DetailActivity</string>
-    <string name="error_internet">No Internet Connectivity</string>
-    <string name="error_empty">No Internet Connectivity</string>
+    <string name="title_activity_detail">Profile</string>
     <string name="action_settings">Settings</string>
 </resources>

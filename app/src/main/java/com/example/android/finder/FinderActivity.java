@@ -10,6 +10,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -36,7 +37,7 @@ public class FinderActivity extends AppCompatActivity {
 
     private TextView msgView;
     private ProgressBar progressBar;
-
+    private ImageView retry;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,17 +45,23 @@ public class FinderActivity extends AppCompatActivity {
         setContentView(R.layout.activity_finder);
 
         ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetwork = connMgr.getActiveNetworkInfo();
+         final NetworkInfo activeNetwork = connMgr.getActiveNetworkInfo();
 
+        apiClient = new ApiClient();
 
-
-
+        retry = (ImageView) findViewById(R.id.retry);
         msgView = (TextView) findViewById(R.id.display_message);
         progressBar = (ProgressBar) findViewById(R.id.progress_bar);
 
+        retry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.v(FinderActivity.class.getName(), "Work");
+                isLoading();
+                    loadDevelopers();
+            }
+        });
 
-
-        apiClient = new ApiClient();
 
         rRecyclerView = (RecyclerView) findViewById(R.id.finder_list);
         rRecyclerView.setLayoutManager(new GridLayoutManager(this,2));
@@ -69,6 +76,7 @@ public class FinderActivity extends AppCompatActivity {
         }else {
             response_message("No Internet Connection");
         }
+
 
 
 
@@ -94,7 +102,6 @@ public class FinderActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<DeveloperResponse> call, Throwable t) {
                 response_message("Could Not Get List");
-                Log.e(FinderActivity.class.getName(), "Error Getting Results");
             }
         });
     }
@@ -102,6 +109,7 @@ public class FinderActivity extends AppCompatActivity {
         progressBar.setVisibility(View.VISIBLE);
         msgView.setVisibility(View.INVISIBLE);
         rRecyclerView.setVisibility(View.INVISIBLE);
+        retry.setVisibility(View.INVISIBLE);
     }
 
     public void response_message (String message) {
@@ -109,11 +117,13 @@ public class FinderActivity extends AppCompatActivity {
         msgView.setVisibility(View.VISIBLE);
         msgView.setText(message);
         rRecyclerView.setVisibility(View.VISIBLE);
+        retry.setVisibility(View.VISIBLE);
 
     }
     public void default_mode () {
         progressBar.setVisibility(View.INVISIBLE);
         msgView.setVisibility(View.INVISIBLE);
         rRecyclerView.setVisibility(View.VISIBLE);
+        retry.setVisibility(View.INVISIBLE);
     }
 }

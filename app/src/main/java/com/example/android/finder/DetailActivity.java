@@ -5,8 +5,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.ShareCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -15,6 +15,8 @@ import android.widget.TextView;
 
 import com.example.android.finder.Models.Developer;
 import com.squareup.picasso.Picasso;
+
+import org.w3c.dom.Text;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -30,11 +32,12 @@ public class DetailActivity extends AppCompatActivity {
         CollapsingToolbarLayout cToolBar = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
         cToolBar.setTitleEnabled(true);
         cToolBar.setTitle(developer.getLogin());
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        cToolBar.setTitleEnabled(false);
 
-
+        TextView usernameView = (TextView) findViewById(R.id.username);
         ImageView imageView = (ImageView) findViewById(R.id.image_id);
         TextView profileUrl = (TextView) findViewById(R.id.profile_url);
+
         Picasso.with(this)
                 .load(developer.getAvatar_url())
                 .placeholder(R.drawable.placeholder)
@@ -42,7 +45,6 @@ public class DetailActivity extends AppCompatActivity {
                 .into(imageView);
 
         profileUrl.setText(developer.getHtml_url());
-
         profileUrl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,6 +54,7 @@ public class DetailActivity extends AppCompatActivity {
             }
         });
 
+        usernameView.setText(developer.getLogin());
 
 
 
@@ -61,7 +64,7 @@ public class DetailActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent shareIntent = ShareCompat.IntentBuilder.from(DetailActivity.this)
                         .setType("text/plain")
-                        .setText("Check out this awesome developer @\"" + developer.getLogin() + "," + developer.getHtml_url())
+                        .setText("Check out this awesome developer @" + developer.getLogin() + " , " + developer.getHtml_url())
                         .getIntent();
                 startActivity(shareIntent);
             }

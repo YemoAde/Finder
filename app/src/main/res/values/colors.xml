@@ -6,4 +6,6 @@
     <color name="primary_material_dark_2">#212121</color>
     <color name="primary_material_dark_1">#2d3032</color>
     <color name="accent_material_dark">#686969</color>
+    <color name="transparent_black">#80000000</color>
+    <color name="detailTitle">#0e0c0c</color>
 </resources>
