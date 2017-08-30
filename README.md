@@ -12,4 +12,4 @@ Pre-requisites
 
 App Showcase
 
-![app showcase](https://github.com/yemoAde/Finder/tree/master/imgs/showcase.gif)
+![showcase](https://user-images.githubusercontent.com/20745718/29885099-6a920d04-8dad-11e7-8744-4e4d6389b1d9.gif)
